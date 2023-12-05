@@ -513,6 +513,11 @@ footer .card hr{
 	width: 30px;
 	margin-bottom: 10px;
 }
+
+footer article:nth-child(2) h3{
+	margin-bottom: 10px;
+}
+
 footer .articles article:nth-child(2) .card ul
 {
 	width: 100%;
