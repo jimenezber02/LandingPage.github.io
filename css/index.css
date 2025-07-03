@@ -12,7 +12,6 @@
 }
 
 h1{
-	margin-bottom: 10px;
 	font-size: 4em;
     color: #ffff;
     font-family: 'Open Sans', sans-serif;
@@ -27,9 +26,9 @@ h2{
 	font-size: 3rem;
     font-weight: 600;
     line-height: 1.2em;
-    transform: default;
-    text-decoration: default;
-    font-style: default;
+    transform: inherit;
+    text-decoration: inherit;
+    font-style: inherit;
 }
 
 h3{
@@ -54,9 +53,9 @@ h5{
     width: 100%;
     font-weight: 600;
     line-height: 1.55;
-    transform: default;
-    text-decoration: default;
-    font-style: default;
+    transform: inherit;
+    text-decoration: inherit;
+    font-style: inherit;
 }
 
 p{
@@ -172,12 +171,16 @@ nav ul li{
 
 #paragraf{
 	padding: 150px;
-	color: #fff;
+	color: #ffffff;
 }#paragraf p{
 	width: 60%;
 	border-left: 3px solid #fff;
 	padding-left: 0.5em;
 }
+
+ header h2 {
+	 color: #fde24f;
+ }
 
 #wrapper-two article:nth-child(1){
 	flex-direction: row;
@@ -406,11 +409,12 @@ nav ul li{
 	flex: 1 1 70%;
 	flex-direction: column;
 	justify-content: center;
+	padding: 10px 5px;
 }
 
 #wrapper-five .articles article:nth-child(2) .card .title-card .imagen img{
 	width: 90px;
-	height: 80px;
+	height: 61px;
 	border-radius: 50px;
 	object-fit: cover;
 }
@@ -660,7 +664,7 @@ footer article:nth-child(3) p{
         flex-direction: column;
         justify-content: flex-start;
         align-items: flex-start;
-		border-bottom: 0px !important;
+		border-bottom: 0 !important;
     }nav .mobile #other-links a{
         padding: 1em 0;
         text-decoration: none;
@@ -806,6 +810,9 @@ footer article:nth-child(3) p{
 	}
 }
 @media screen and (max-width: 544px) {
+	header {
+		background-position: top;
+	}
     h3{
         font-size: 1rem !important;
     }
@@ -836,6 +843,6 @@ footer article:nth-child(3) p{
 	
 	#wrapper-five .articles article:nth-child(2) .card .title-card .imagen{
 		align-items: inherit;
-		flex: 1 1 20%;
+		flex: 1 1 12%;
 	}
 }
